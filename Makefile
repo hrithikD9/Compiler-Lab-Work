@@ -17,6 +17,11 @@ bison:
 	bison -d -o "$$project/build/bison.tab.c" "$$project/src/bison.y"; \
 	flex -o "$$project/build/lex.yy.c" "$$project/src/lex.l"; \
 	gcc -I"$$project/build" "$$project/build/bison.tab.c" "$$project/build/lex.yy.c" -o "$$project/build/bison-addition-parser"
+	@project=Bison/Bison-MultiLine-Addition-Parser; \
+	mkdir -p "$$project/build"; \
+	bison -d -o "$$project/build/bison.tab.c" "$$project/src/bison.y"; \
+	flex -o "$$project/build/lex.yy.c" "$$project/src/lex.l"; \
+	gcc -I"$$project/build" "$$project/build/bison.tab.c" "$$project/build/lex.yy.c" -o "$$project/build/bison-multiline-addition-parser"
 
 clean:
 	@find Flex_Learning Bison -type f -path '*/build/*' -delete

@@ -1,0 +1,17 @@
+# Generated Flex/Bison build outputs
+**/build/
+
+# Editor and OS metadata
+.directory
+.DS_Store
+Thumbs.db
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Temporary and backup files
+*.swp
+*.swo
+*~
+*.tmp
